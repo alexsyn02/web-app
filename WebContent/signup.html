@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>My title</title>
+</head>
+<body>
+	<form method="post" action="MyServlet">
+		<label>   
+			<span>Name: </span>
+			<input type="text" name="name">
+		</label>
+		<label>
+			<span>Profession: </span>
+			<select name="job" multiple="multiple" size="3">
+				<option value="Developer" selected>Developer</option>
+				<option value="Tester">Tester</option>
+				<option value="Analyst">Analyst</option>
+			</select>
+		</label>
+		<label>
+			<input type="radio" name="gender" value="Male" checked="checked"><span>Male</span>
+			<input type="radio" name="gender" value="Female"><span>Female</span>
+		</label>
+		<label>
+			<span>Are you 18?</span>
+			<input type="checkbox" name="age18" value="Yes"><span>Yes</span>
+		</label>
+		<input type="submit" value="Send">
+	</form>
+</body>
+</html>
